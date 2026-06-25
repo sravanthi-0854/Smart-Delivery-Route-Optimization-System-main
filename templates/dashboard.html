@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+
+        body{
+            margin:0;
+            background:#0f0f0f;
+            color:white;
+            font-family:Arial, sans-serif;
+        }
+
+        .sidebar{
+            width:250px;
+            height:100vh;
+            background:#000;
+            position:fixed;
+            left:0;
+            top:0;
+            padding-top:20px;
+        }
+
+        .sidebar h3{
+            color:white;
+            text-align:center;
+            margin-bottom:30px;
+        }
+
+        .sidebar a{
+            display:block;
+            color:#ddd;
+            padding:15px 20px;
+            text-decoration:none;
+            transition:0.3s;
+        }
+
+        .sidebar a:hover{
+            background:#222;
+            color:#00d4ff;
+        }
+
+        .content{
+            margin-left:270px;
+            padding:25px;
+        }
+
+        .card{
+            background:#1a1a1a;
+            color:white;
+            border:none;
+            border-radius:15px;
+            box-shadow:0px 4px 12px rgba(0,0,0,0.3);
+        }
+
+        .stat-card h1{
+            color:#00d4ff;
+            font-weight:bold;
+        }
+
+        .btn-black{
+            background:black;
+            color:white;
+            border:none;
+        }
+
+        .btn-black:hover{
+            background:#333;
+            color:white;
+        }
+
+        footer{
+            margin-left:270px;
+            padding:20px;
+            text-align:center;
+            color:#999;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+    <div class="text-center">
+        <img src="https://cdn-icons-png.flaticon.com/512/1048/1048953.png"
+             width="80"
+             class="mb-3">
+    </div>
+
+    <h3>🚚 Smart Delivery</h3>
+
+    <a href="/dashboard">🏠 Dashboard</a>
+
+    <a href="/optimize">🚚 Optimize Route</a>
+
+    <a href="/">🚪 Logout</a>
+
+</div>
+
+<!-- Content -->
+
+<div class="content">
+
+    <h2 class="mb-4">
+        🚚 Smart Delivery Route Optimization System
+    </h2>
+
+    <!-- Stats -->
+
+    <div class="row">
+
+        <div class="col-md-4">
+            <div class="card stat-card p-4 text-center">
+                <h5>📏 Distance Analysis</h5>
+                <h1>✓</h1>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card stat-card p-4 text-center">
+                <h5>⏱ Travel Time</h5>
+                <h1>✓</h1>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card stat-card p-4 text-center">
+                <h5>⛽ Fuel Cost</h5>
+                <h1>✓</h1>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Project Objective -->
+
+    <div class="card p-4 mt-4">
+
+        <h4>🎯 Project Objective</h4>
+
+        <p>
+            Smart Delivery Route Optimization System helps users find
+            the most efficient route between two Indian cities.
+            The system calculates travel distance, estimated travel time,
+            fuel cost and route information automatically using
+            OpenRouteService API.
+        </p>
+
+    </div>
+
+    <!-- Example -->
+
+    <div class="card p-4 mt-4">
+
+        <h4>🚚 Example Route Optimization</h4>
+
+        <div class="row text-center">
+
+            <div class="col-md-3">
+                <h5>Source</h5>
+                <p>Tirupati</p>
+            </div>
+
+            <div class="col-md-3">
+                <h5>Destination</h5>
+                <p>Hyderabad</p>
+            </div>
+
+            <div class="col-md-3">
+                <h5>Distance</h5>
+                <p>556 KM</p>
+            </div>
+
+            <div class="col-md-3">
+                <h5>Travel Time</h5>
+                <p>8 Hours</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Features -->
+
+    <div class="card p-4 mt-4">
+
+        <h4>✨ Features</h4>
+
+        <ul>
+            <li>🗺 Route Optimization Between Indian Cities</li>
+            <li>📏 Automatic Distance Calculation</li>
+            <li>⏱ Estimated Travel Time</li>
+            <li>⛽ Fuel Cost Calculation</li>
+            <li>🚚 Delivery Route Planning</li>
+            <li>📍 Route Visualization on Map</li>
+        </ul>
+
+    </div>
+
+    <!-- Quick Action -->
+
+    <div class="card p-4 mt-4 text-center">
+
+        <h4>⚡ Start Route Optimization</h4>
+
+        <a href="/optimize" class="btn btn-black mt-2">
+            🚚 Optimize Route
+        </a>
+
+    </div>
+
+</div>
+
+<footer>
+
+    <hr>
+
+    <p>
+        Smart Delivery Route Optimization System |
+        Developed using Flask, OpenRouteService API, Bootstrap & OpenStreetMap
+    </p>
+
+</footer>
+
+</body>
+</html>
